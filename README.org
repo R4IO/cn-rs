@@ -1,0 +1,13 @@
+* Country Notes Revenue Statistics Africa 2016
+
+** Report
+
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_cmr.html][CMR: Cameroon]]
+
+** Data
+
+   - [[http://stats.oecd.org/Index.aspx?DataSetCode=RS_AFR][DataSetCode=RS_AFR]] This dataset includes 8 African countries as well as the OECD average and the LAC (Latin American and Caribbean countries) average.
+
+** Todo
+
+   - include table
