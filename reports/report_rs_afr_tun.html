@@ -13,7 +13,7 @@
 
 <title></title>
 
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -22,6 +22,11 @@
 <script src="libs/navigation-1.1/tabsets.js"></script>
 <link href="libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="libs/highlightjs-1.1/highlight.js"></script>
+<script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="libs/datatables-binding-0.2/datatables.js"></script>
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -128,17 +133,30 @@ $(document).ready(function () {
 <h3>Revenue Statistics in Africa 2016 - Tunisia</h3>
 <div id="tax-to-gdp-ratio-over-time" class="section level4">
 <h4>Tax-to-GDP ratio over time</h4>
-<blockquote>
-<p>The tax-to-GDP ratio (total tax revenue as a % of GDP) in South Africa increased by 5.5 percentage points between 2000 and 2014, from 22.4% to 27.8%.</p>
-</blockquote>
+<!-- The tax-to-GDP ratio (total tax revenue as a % of GDP) in South Africa
+increased by 5.5 percentage points between 2000 and 2014, from 22.4% to 27.8%.
+-->
 <p>The tax-to-GDP ratio (total tax revenue as a % of GDP) in Tunisia increased by 6.7 percentage points between 2000 and 2014, from 24.6% to 31.3%.</p>
 <p><img src="figures/tun/taxgdp-plot-1.png" width="960" /></p>
 </div>
+<div id="tax-to-gdp-ratio-by-main-types-of-tax-revenues" class="section level4">
+<h4>Tax-to-GDP ratio by main types of tax revenues</h4>
+<!-- The total tax-to-GDP ratio for South Africa increased by 5.5 percentage
+points between 2000 and 2014. Over this period, the tax revenue category with
+the highest growth was taxes on goods and services that displayed an increase of
+2.5 percentage points of GDP. On the other hand, the tax revenue category with
+the lowest growth was personal income tax that decreased by 0.3 percentage
+points over the same period. -->
+<p>The total tax-to-GDP ratio for Tunisia increased by 4.4 percentage points between 2000 and 2014. Over this period, the tax revenue category with the highest growth was taxes on income, profits and capital gains that displayed an increase of 4.4 percentage points of GDP. On the other hand, the tax revenue category with the lowest growth was taxes on goods and services outside of VATs that decreased by -1.7 percentage points over the same period.</p>
+<div id="htmlwidget-87c5afed3ed68d6774b3" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-87c5afed3ed68d6774b3">{"x":{"filter":"none","class":"display","caption":"<caption style=\"caption-side: bottom; text-align: left;\">\n  <em>Note<\/em>\n   : Tax revenue includes net receipts for all levels of government.\n  <br/>\n  The data for personal income tax and corporate income tax should be  treated with caution when the amount of income tax that belongs to neither of these two subcategories is too large. In the case of Tunisia, 0.00539999999999985% of total income tax in 2014 was not classified as either personal or corporate income tax.\n<\/caption>","data":[["Total tax ratio","Taxes on income, profits and capital gains","...Of which Personal income tax","...Of which Corporate income tax","Social security contributions","Taxes on payroll","Taxes on property","Taxes on goods and services","...Taxes on goods and services (excl VAT)","...Value added tax","Other"],[25227.763,7958.9277,4095.7003,3858.8894,6950.426,284.505,277.7969,9083.5321,3967.4722,5116.0599,672.6],[31.3351,9.8857,5.0872,4.7931,8.633,0.3534,0.345,11.2825,4.9279,6.3546,0.8],[30.0598,9.1733,4.9489,4.2204,8.6736,0.3227,0.3254,10.8235,4.8759,5.9476,0.7],[26.9036,8.0122,4.1497,3.8591,6.9844,0.2913,0.2938,10.6785,4.8846,5.7939,0.6],[24.5869,5.5176,3.5641,1.9535,5.2707,0.3624,0.2754,12.6697,6.5802,6.0895,0.5],[6.7,4.4,1.5,2.8,3.4,-0,0.1,-1.4,-1.7,0.3,0.3],[34.155,11.526,8.774,2.882,9.105,0.424,1.851,10.965,4.343,6.622,0.3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th rowspan=\"3\"><\/th>\n      <th colspan=\"6\">Tunisia<\/th>\n      <th colspan=\"1\">OECD<\/th>\n    <\/tr>\n    <tr>\n      <th rowspan=\"2\">Millions (TUN) 2014<\/th>\n      <th colspan=\"5\">% of GDP<\/th>\n      <th colspan=\"1\">% of GDP<\/th>\n    <\/tr>\n    <tr>\n      <th colspan=\"1\">2014<\/th>\n      <th colspan=\"1\">2013<\/th>\n      <th colspan=\"1\">2009<\/th>\n      <th colspan=\"1\">2000<\/th>\n      <th colspan=\"1\">2000-2014<\/th>\n      <th colspan=\"1\">2013<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"paging":false,"info":false,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7]}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
 <div id="ratios-of-tax-and-non-tax-revenue-to-gdp-2014" class="section level4">
 <h4>Ratios of tax and non-tax revenue to GDP, 2014</h4>
-<blockquote>
-<p>In 2014, the tax-to-GDP ratio for South Africa was 27.8%, which is the third highest among the eight African countries featured in Revenue Statistics in Africa. The ratio of non-tax revenue to GDP for South Africa was 0.6%, which is the eighth highest.</p>
-</blockquote>
+<!-- In 2014, the tax-to-GDP ratio for South Africa was 27.8%, which is the
+third highest among the eight African countries featured in Revenue Statistics
+in Africa. The ratio of non-tax revenue to GDP for South Africa was 0.6%, which
+is the eighth highest. -->
 <p>In 2014, the tax-to-GDP ratio for Tunisia was 31.3%, which is the highest among the eight African countries featured in Revenue Statistics in Africa. The ratio of non-tax revenue to GDP for South Africa was 2.2%, which is the seventh highest.</p>
 <p><img src="figures/tun/nontaxgdp-plot-1.png" width="960" /></p>
 </div>
@@ -147,20 +165,22 @@ $(document).ready(function () {
 <h2>Tax structure</h2>
 <div id="evolution-of-tax-structure-from-2000-to-2014" class="section level4">
 <h4>Evolution of tax structure from 2000 to 2014</h4>
-<blockquote>
-<p>The tax structure, i.e. the tax as a proportion of total tax revenue, in South Africa has evolved since 2000. The tax revenue category that changed the most was personal income taxes which has changed from 41.2% of total taxation in 2000 to 32.1% in 2014.</p>
-</blockquote>
+<!-- The tax structure, i.e. the tax as a proportion of total tax revenue, in
+South Africa has evolved since 2000. The tax revenue category that changed the
+most was personal income taxes which has changed from 41.2% of total taxation in
+2000 to 32.1% in 2014. -->
 <p>The tax structure, i.e. the tax as a proportion of total tax revenue, in Tunisia has evolved since 2000. The tax revenue category that changed the most was goods and services taxes outside of vat which has changed from 26.8% of total taxation in 2000 to 15.7% in 2014.</p>
 <p><img src="figures/tun/taxper-area-plot-1.png" width="960" /></p>
 </div>
 <div id="tax-structure-compared-with-lac-and-the-oecd" class="section level4">
 <h4>Tax structure compared with LAC and the OECD</h4>
-<blockquote>
-<p>Income taxes in South Africa are higher than both the LAC and OECD averages as a percent of total taxation. Social security contributions (SSC) are a major component of OECD and LAC countries’ revenues but among the Revenue Statistics in Africa countries, this is only true for Morocco and Tunisia.</p>
-</blockquote>
-<blockquote>
-<p>The proportion of taxation devoted to goods and services taxes is lower than the LAC average, but higher than the OECD average. Property taxes are higher than the LAC average, but lower than the OECD average.</p>
-</blockquote>
+<!-- Income taxes in South Africa are higher than both the LAC and OECD averages
+as a percent of total taxation. Social security contributions (SSC) are a major
+component of OECD and LAC countries’ revenues but among the Revenue Statistics
+in Africa countries, this is only true for Morocco and Tunisia. -->
+<!-- The proportion of taxation devoted to goods and services taxes is lower
+than the LAC average, but higher than the OECD average. Property taxes are
+higher than the LAC average, but lower than the OECD average. -->
 <p>Income taxes in Tunisia are higher than the LAC average, but lower than the OECD average as a percent of total taxation. Social security contributions (SSC) are a major component of OECD and LAC countries’ revenues but among the Revenue Statistics in Africa countries, this is only true for Morocco and Tunisia.</p>
 <p>The proportion of taxation devoted to goods and services taxes is lower than the LAC average, but higher than the OECD average. Property taxes are lower than both the LAC and OECD averages.</p>
 <p><img src="figures/tun/taxper-bar-plot-1.png" width="960" /></p>
