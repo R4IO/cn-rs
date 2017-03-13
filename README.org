@@ -3,6 +3,13 @@
 ** Report
 
    - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_cmr.html][CMR: Cameroon]]
+   - CIV: Côte d'Ivoire
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_mus.html][MUS: Mauritius]]
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_mar.html][MAR: Morocco]]
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_rwa.html][RWA: Rwanda]]
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_sen.html][SEN: Senegal]]
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_zaf.html][ZAF: South Africa]]
+   - [[http://rdata.work/cn-rs-afr/reports/report_rs_afr_tun.html][TUN: Tunisia]]
 
 ** Data
 
