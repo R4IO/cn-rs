@@ -17,4 +17,4 @@
 
 ** Todo
 
-   - add PDF version
+   - table in PDF: remove empty column, add extended caption
