@@ -2,20 +2,16 @@
 title: ""
 author: ""
 date: ""
-output:
-  html_document:
-    toc: false
-    theme: united
-    fig_width: 10
-    include:
-      after_body: includes/footer-rs-afr.html
-    css: assets/css/style-rs-afr.css
-#    self_contained: true
-    self_contained: false
-    lib_dir: libs
-#  pdf_document:
+# output:
+#   html_document:
 #    toc: false
-#    highlight: zenburn
+#    theme: united
+#    fig_width: 10
+#    include:
+#      after_body: includes/footer-rs-afr.html
+#    css: assets/css/style-rs-afr.css
+#    self_contained: false
+#    lib_dir: libs
 ---
 
 
