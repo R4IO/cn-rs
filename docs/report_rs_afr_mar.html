@@ -13,7 +13,7 @@
 
 <title></title>
 
-<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -22,11 +22,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<script src="site_libs/htmlwidgets-0.8/htmlwidgets.js"></script>
-<script src="site_libs/datatables-binding-0.2/datatables.js"></script>
-<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="site_libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -253,8 +248,371 @@ the highest growth was taxes on goods and services that displayed an increase of
 the lowest growth was personal income tax that decreased by 0.3 percentage
 points over the same period. -->
 <p>The total tax-to-GDP ratio for Morocco increased by 4.9 percentage points between 2000 and 2014. Over this period, the tax revenue category with the highest growth was VATs that displayed an increase of 2.9 percentage points of GDP. On the other hand, the tax revenue category with the lowest growth was taxes on goods and services outside of VATs that decreased by -3.3 percentage points over the same period.</p>
-<div id="htmlwidget-fb91ec0cfb898d904cea" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fb91ec0cfb898d904cea">{"x":{"filter":"none","class":"display","caption":"<caption style=\"caption-side: bottom; text-align: left;\">\n  Note : Tax revenue includes net receipts for all levels of government.\n  <br/>\n  \n<\/caption>","data":[["Total tax ratio","Taxes on income, profits and capital gains","...Of which Personal income tax","...Of which Corporate income tax","Social security contributions","Taxes on payroll","Taxes on property","Taxes on goods and services","...Taxes on goods and services (excl VAT)","...Value added tax","Other"],[263566.4694,76342.15,34573.1365,41769.0135,54899.9194,0,17906.4,110024,35029,74995,4394],[28.5008,8.2553,3.7386,4.5167,5.9366,0,1.9363,11.8975,3.7879,8.1096,0.5],[28.4592,8.3913,3.8659,4.5254,5.549,0,1.8863,12.1166,3.7671,8.3495,0.5],[27.2585,9.3214,3.6229,5.6985,3.9771,0,1.468,11.9284,4.5699,7.3585,0.6],[23.6294,5.7294,3.5215,2.2079,3.9498,0,1.3091,12.2682,7.0669,5.2013,0.4],[4.8714,2.5259,0.2171,2.3088,1.9868,0,0.6272,-0.370699999999999,-3.279,2.9083,0.1],[34.155,11.526,8.774,2.882,9.105,0.424,1.851,10.965,4.343,6.622,0.3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th rowspan=\"3\"><\/th>\n      <th colspan=\"6\">Morocco<\/th>\n      <th colspan=\"1\">OECD<\/th>\n    <\/tr>\n    <tr>\n      <th rowspan=\"2\">Millions (MAR) 2014<\/th>\n      <th colspan=\"5\">% of GDP<\/th>\n      <th colspan=\"1\">% of GDP<\/th>\n    <\/tr>\n    <tr>\n      <th colspan=\"1\">2014<\/th>\n      <th colspan=\"1\">2013<\/th>\n      <th colspan=\"1\">2009<\/th>\n      <th colspan=\"1\">2000<\/th>\n      <th colspan=\"1\">2000-2014<\/th>\n      <th colspan=\"1\">2013<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"paging":false,"info":false,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nDTWidget.formatRound(this, row, data, 2, 1);\nDTWidget.formatRound(this, row, data, 3, 1);\nDTWidget.formatRound(this, row, data, 4, 1);\nDTWidget.formatRound(this, row, data, 5, 1);\nDTWidget.formatRound(this, row, data, 6, 1);\nDTWidget.formatRound(this, row, data, 7, 1);\nDTWidget.formatRound(this, row, data, 1, 0);\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<head>
+<style>
+        table {
+              font-family: serif;
+              text-align: right;}
+        th {
+              padding: 1px 1px 5px 5px;
+            }
+        td {
+             padding: 1px 1px 5px 5px; }
+      </style>
+</head>
+<table align="center" style="border-collapse: collapse; caption-side:bottom; font-size:10pt;">
+<caption style="text-align:left;">
+Note : Tax revenue includes net receipts for all levels of government.
+</caption>
+<tr>
+<td colspan=" 1 " align="center" style="font-weight: normal;border-top: 2px solid gray; border-bottom: hidden; border-left: 1px solid black;">
+</td>
+<td colspan=" 6 " align="center" style="font-weight: normal;border-top: 2px solid gray; border-bottom: 1px solid gray; border-left: 1px solid black;">
+Morocco
+</td>
+<td colspan=" 1 " align="center" style="font-weight: normal;border-top: 2px solid gray; border-bottom: 1px solid gray; border-left: 1px solid black;border-right:0px solid black;">
+OECD average
+</td>
+</tr>
+<tr>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: hidden;">
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: hidden;">
+Millions (MAR)
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: hidden;">
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: hidden;">
+% of
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: hidden;">
+GDP
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: hidden;">
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: hidden;">
+change in pp
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-right:0px solid black;border-bottom: hidden;">
+% of GDP
+</th>
+</tr>
+<tr>
+<th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;">
+</th>
+<th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;">
+2014
+</th>
+<th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;">
+2014
+</th>
+<th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;">
+2013
+</th>
+<th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;">
+2009
+</th>
+<th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;">
+2000
+</th>
+<th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;">
+2000-14
+</th>
+<th align="center" style="font-weight: normal;border-left: 1px solid black;border-right:0px solid black;border-bottom: 1px solid gray;">
+2013
+</th>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;background-color: #DCE6F1;">
+Total tax ratio
+</td>
+<td align="right" style="border-left: 1px solid black;background-color: #DCE6F1;">
+263566
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DCE6F1;">
+29
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DCE6F1;">
+28
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DCE6F1;">
+27
+</td>
+<td align="center" style="border-left: 1px solid black;background-color: #DCE6F1;">
+24
+</td>
+<td align="center" style="border-left: 1px solid black;background-color: #DCE6F1;">
+4.9
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;background-color: #DCE6F1;">
+34
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;">
+Taxes on income, profits and capital gains
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;">
+76342
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+8.3
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+8.4
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+9.3
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+5.7
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+2.5
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;">
+12
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+…Of which Personal income tax
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+34573
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.7
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.9
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.6
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.5
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.22
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;background-color: #DCE6F1;">
+8.8
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;">
+…Of which Corporate income tax
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;">
+41769
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+4.5
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+4.5
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+5.7
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+2.2
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+2.3
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;">
+2.9
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+Social security contributions
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+54900
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+5.9
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+5.5
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+4
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.9
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+2
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;background-color: #DCE6F1;">
+9.1
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;">
+Taxes on payroll
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+0
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;">
+0.42
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+Taxes on property
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+17906
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+1.9
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+1.9
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+1.5
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+1.3
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.63
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;background-color: #DCE6F1;">
+1.9
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;">
+Taxes on goods and services
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;">
+110024
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+12
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+12
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+12
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+12
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+-0.37
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;">
+11
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+…Taxes on goods and services (excl VAT)
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+35029
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.8
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+3.8
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+4.6
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+7.1
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+-3.3
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;background-color: #DCE6F1;">
+4.3
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;">
+…Value added tax
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;">
+74995
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+8.1
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+8.3
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+7.4
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+5.2
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+2.9
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;">
+6.6
+</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+Other
+</td>
+<td align="right" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+4394
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.5
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.5
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.6
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.4
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.1
+</td>
+<td align="center" style="border-left: 1px solid black;border-right:0px solid black;border-top: hidden;background-color: #DCE6F1;">
+0.3
+</td>
+</tr>
+<tr>
+<td colspan="8" align="left" style="font-size:8pt ;border-top: 1px solid black; border-bottom: hidden;">
+</td>
+</tr>
+</table>
 </div>
 <div id="ratios-of-tax-and-non-tax-revenue-to-gdp-2014" class="section level4">
 <h4>Ratios of tax and non-tax revenue to GDP, 2014</h4>
