@@ -1,0 +1,80 @@
+
+R version 3.3.3 (2017-03-06) -- "Another Canoe"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(ggplot2)
+> 
+> data_plot <- readRDS(file = "data_plot.rds")
+> 
+> colarea = c("#929292",
++             "#4f81bd",
++             "#cccccc",
++             "#a7b9e3",
++             "#edf0f7",
++             "white"
++             )
+> 
+> all_breaks <- function(x) seq(x[1], x[2], 1)
+> 
+> p <-
++   ggplot(data = data_plot, aes(x = year, y = value, fill = taxlegend)) +
++   geom_area(position = "stack", color = "#a6a6a6", size = 0.25) +
++ geom_label(aes(y = labelposition, label = labelvalue), na.rm = TRUE, position = "identity", label.size = 0, label.padding = unit(0.15, "lines"), alpha = 0.5) + # alpha = 0.5
++   scale_fill_manual(values = rev(colarea)) +
++   scale_x_continuous(breaks = all_breaks, expand = c(0,0)) +
++   scale_y_continuous(breaks = c(0, 20, 40, 60, 80, 100), expand = c(0,0)) +
++   xlab("Year")
+> 
+> pdf(file = "plot.pdf", width = 16, height = 8)
+> p
+> dev.off()
+null device 
+          1 
+> 
+> png(file = "plot.png", width = 1000, height = 500)
+> p
+> dev.off()
+null device 
+          1 
+> 
+> write.csv(data_plot, file = "data_plot.csv", row.names = FALSE)
+> 
+> sessionInfo()
+R version 3.3.3 (2017-03-06)
+Platform: x86_64-redhat-linux-gnu (64-bit)
+Running under: Fedora 25 (Workstation Edition)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8    LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C             LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_2.2.1
+
+loaded via a namespace (and not attached):
+ [1] colorspace_1.3-2 scales_0.4.1     assertthat_0.1   lazyeval_0.2.0   plyr_1.8.4       tools_3.3.3      gtable_0.2.0    
+ [8] tibble_1.2       Rcpp_0.12.9.4    grid_3.3.3       digest_0.6.12    munsell_0.4.3   
+> 
+> quit("no")
+> proc.time()
+   user  system elapsed 
+  0.999   0.035   1.029 

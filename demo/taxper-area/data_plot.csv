@@ -1,0 +1,91 @@
+"tax","cou","year","value","taxlegend","labelvalue","labelposition"
+"1100","ZAF",2014,32.0736,"Personal income tax",32,16.0368
+"1200","ZAF",2014,17.2286,"Corporate income tax",17,40.6879
+"4000","ZAF",2014,5.0634,"Property taxes",5,51.8339
+"5111","ZAF",2014,24.2665,"VATs",24,66.49885
+"5000X","ZAF",2014,16.7262,"Taxes on goods & services",17,86.9952
+"OTHTAX","ZAF",2014,4.6417,"Other taxes",5,97.67915
+"1100","ZAF",2013,31.0958,"Personal income tax",NA,NA
+"1200","ZAF",2013,17.9749,"Corporate income tax",NA,NA
+"4000","ZAF",2013,4.9849,"Property taxes",NA,NA
+"5111","ZAF",2013,23.9539,"VATs",NA,NA
+"5000X","ZAF",2013,17.6636,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2013,4.3269,"Other taxes",NA,NA
+"1100","ZAF",2012,30.7224,"Personal income tax",NA,NA
+"1200","ZAF",2012,17.8579,"Corporate income tax",NA,NA
+"4000","ZAF",2012,4.8304,"Property taxes",NA,NA
+"5111","ZAF",2012,23.788,"VATs",NA,NA
+"5000X","ZAF",2012,17.1406,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2012,5.66070000000001,"Other taxes",NA,NA
+"1100","ZAF",2011,30.5983,"Personal income tax",NA,NA
+"1200","ZAF",2011,18.8554,"Corporate income tax",NA,NA
+"4000","ZAF",2011,4.9469,"Property taxes",NA,NA
+"5111","ZAF",2011,24.4597,"VATs",NA,NA
+"5000X","ZAF",2011,15.9638,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2011,5.17590000000001,"Other taxes",NA,NA
+"1100","ZAF",2010,31.3087,"Personal income tax",NA,NA
+"1200","ZAF",2010,18.8341,"Corporate income tax",NA,NA
+"4000","ZAF",2010,5.1625,"Property taxes",NA,NA
+"5111","ZAF",2010,24.2843,"VATs",NA,NA
+"5000X","ZAF",2010,15.4306,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2010,4.9798,"Other taxes",NA,NA
+"1100","ZAF",2009,30.7567,"Personal income tax",NA,NA
+"1200","ZAF",2009,22.0944,"Corporate income tax",NA,NA
+"4000","ZAF",2009,4.9213,"Property taxes",NA,NA
+"5111","ZAF",2009,23.0862,"VATs",NA,NA
+"5000X","ZAF",2009,13.777,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2009,5.3644,"Other taxes",NA,NA
+"1100","ZAF",2008,28.9498,"Personal income tax",NA,NA
+"1200","ZAF",2008,24.4534,"Corporate income tax",NA,NA
+"4000","ZAF",2008,4.4226,"Property taxes",NA,NA
+"5111","ZAF",2008,23.1821,"VATs",NA,NA
+"5000X","ZAF",2008,12.9724,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2008,6.0197,"Other taxes",NA,NA
+"1100","ZAF",2007,27.6851,"Personal income tax",NA,NA
+"1200","ZAF",2007,23.7377,"Corporate income tax",NA,NA
+"4000","ZAF",2007,3.1833,"Property taxes",NA,NA
+"5111","ZAF",2007,25.1454,"VATs",NA,NA
+"5000X","ZAF",2007,14.2342,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2007,6.01429999999998,"Other taxes",NA,NA
+"1100","ZAF",2006,27.1074,"Personal income tax",NA,NA
+"1200","ZAF",2006,21.6221,"Corporate income tax",NA,NA
+"4000","ZAF",2006,4.7023,"Property taxes",NA,NA
+"5111","ZAF",2006,25.9121,"VATs",NA,NA
+"5000X","ZAF",2006,14.15,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2006,6.5061,"Other taxes",NA,NA
+"1100","ZAF",2005,29.6464,"Personal income tax",NA,NA
+"1200","ZAF",2005,20.0331,"Corporate income tax",NA,NA
+"4000","ZAF",2005,4.5862,"Property taxes",NA,NA
+"5111","ZAF",2005,26.0761,"VATs",NA,NA
+"5000X","ZAF",2005,13.0059,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2005,6.6523,"Other taxes",NA,NA
+"1100","ZAF",2004,31.2675,"Personal income tax",NA,NA
+"1200","ZAF",2004,18.2968,"Corporate income tax",NA,NA
+"4000","ZAF",2004,3.2354,"Property taxes",NA,NA
+"5111","ZAF",2004,26.9963,"VATs",NA,NA
+"5000X","ZAF",2004,13.6657,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2004,6.5383,"Other taxes",NA,NA
+"1100","ZAF",2003,31.8148,"Personal income tax",NA,NA
+"1200","ZAF",2003,18.776,"Corporate income tax",NA,NA
+"4000","ZAF",2003,5.2198,"Property taxes",NA,NA
+"5111","ZAF",2003,24.8191,"VATs",NA,NA
+"5000X","ZAF",2003,12.936,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2003,6.4343,"Other taxes",NA,NA
+"1100","ZAF",2002,32.9892,"Personal income tax",NA,NA
+"1200","ZAF",2002,19.5346,"Corporate income tax",NA,NA
+"4000","ZAF",2002,1.8194,"Property taxes",NA,NA
+"5111","ZAF",2002,24.3437,"VATs",NA,NA
+"5000X","ZAF",2002,12.735,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2002,8.57810000000001,"Other taxes",NA,NA
+"1100","ZAF",2001,35.549,"Personal income tax",NA,NA
+"1200","ZAF",2001,18.4018,"Corporate income tax",NA,NA
+"4000","ZAF",2001,1.7785,"Property taxes",NA,NA
+"5111","ZAF",2001,23.6341,"VATs",NA,NA
+"5000X","ZAF",2001,13.5992,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2001,7.03739999999999,"Other taxes",NA,NA
+"1100","ZAF",2000,41.1715,"Personal income tax",NA,NA
+"1200","ZAF",2000,11.3378,"Corporate income tax",NA,NA
+"4000","ZAF",2000,1.81,"Property taxes",NA,NA
+"5111","ZAF",2000,24.6064,"VATs",NA,NA
+"5000X","ZAF",2000,15.3183,"Taxes on goods & services",NA,NA
+"OTHTAX","ZAF",2000,5.75599999999999,"Other taxes",NA,NA
