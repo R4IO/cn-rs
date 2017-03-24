@@ -40,17 +40,20 @@ Type 'q()' to quit R.
 +   scale_y_continuous(breaks = c(0, 20, 40, 60, 80, 100), expand = c(0,0)) +
 +   xlab("Year")
 > 
+> gt <- ggplot_gtable(ggplot_build(p))
+> gt$layout$clip[gt$layout$name == "panel"] <- "off"
+> 
 > pdf(file = "plot.pdf", width = 16, height = 8)
-> p
+> grid::grid.draw(gt)
 > dev.off()
-null device 
-          1 
+pdf 
+  2 
 > 
 > png(file = "plot.png", width = 1000, height = 500)
-> p
+> grid::grid.draw(gt)
 > dev.off()
-null device 
-          1 
+pdf 
+  2 
 > 
 > write.csv(data_plot, file = "data_plot.csv", row.names = FALSE)
 > 
@@ -74,7 +77,9 @@ loaded via a namespace (and not attached):
  [1] colorspace_1.3-2 scales_0.4.1     assertthat_0.1   lazyeval_0.2.0   plyr_1.8.4       tools_3.3.3      gtable_0.2.0    
  [8] tibble_1.2       Rcpp_0.12.9.4    grid_3.3.3       digest_0.6.12    munsell_0.4.3   
 > 
+> unlink("Rplots.pdf")
+> 
 > quit("no")
 > proc.time()
    user  system elapsed 
-  0.999   0.035   1.029 
+  0.842   0.041   0.876 

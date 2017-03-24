@@ -21,16 +21,21 @@ geom_label(aes(y = labelposition, label = labelvalue), na.rm = TRUE, position = 
   scale_y_continuous(breaks = c(0, 20, 40, 60, 80, 100), expand = c(0,0)) +
   xlab("Year")
 
+gt <- ggplot_gtable(ggplot_build(p))
+gt$layout$clip[gt$layout$name == "panel"] <- "off"
+
 pdf(file = "plot.pdf", width = 16, height = 8)
-p
+grid::grid.draw(gt)
 dev.off()
 
 png(file = "plot.png", width = 1000, height = 500)
-p
+grid::grid.draw(gt)
 dev.off()
 
 write.csv(data_plot, file = "data_plot.csv", row.names = FALSE)
 
 sessionInfo()
+
+unlink("Rplots.pdf")
 
 quit("no")
