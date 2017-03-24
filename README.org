@@ -2,14 +2,14 @@
 
 ** HTML Report
 
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_cmr.html][CMR: Cameroon]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_cmr.html][CMR: Cameroon]]
    - CIV: Côte d'Ivoire
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_mus.html][MUS: Mauritius]]
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_mar.html][MAR: Morocco]]
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_rwa.html][RWA: Rwanda]]
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_sen.html][SEN: Senegal]]
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_zaf.html][ZAF: South Africa]]
-   - [[http://oecd-ctp.github.io/cn-rs/reports/report_rs_afr_tun.html][TUN: Tunisia]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_mus.html][MUS: Mauritius]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_mar.html][MAR: Morocco]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_rwa.html][RWA: Rwanda]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_sen.html][SEN: Senegal]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_zaf.html][ZAF: South Africa]]
+   - [[https://oecd-ctp.github.io/cn-rs/report_rs_afr_tun.html][TUN: Tunisia]]
 
 ** PDF Report
 
