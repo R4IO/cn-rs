@@ -98,7 +98,8 @@ source("../lib/prepare-report-rs-afr.R")
 opts_chunk$set(tidy=FALSE,message=FALSE,size='footnotesize',
                background = 'white',comment=NA, digits = 3,
                prompt = TRUE)
-opts_chunk$set(fig.path=file.path("figures", tolower(couselect), "pdf", ""))
+# opts_chunk$set(fig.path=file.path("figures", tolower(couselect), "pdf", ""))
+opts_chunk$set(fig.path=file.path("figures", tolower(couselect), ""))
 @
 
 % \title{}
